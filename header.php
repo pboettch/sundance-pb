@@ -26,24 +26,38 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <?php wp_head(); ?>
+
+<style type="text/css">
+#masthead {
+    background-image: url('<?php header_image(); ?>');
+	width: <?php echo HEADER_IMAGE_WIDTH; ?>px;
+	height: <?php echo HEADER_IMAGE_HEIGHT; ?>px;
+	position: relative;
+}
+.masthead-inner {
+	width:100%;
+	position: absolute; bottom: 1.5em; left: 0;
+}
+</style>
+
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
-		<div class="masthead-inner clear-fix">
+		<div class="masthead-inner">
 			<hgroup>
-				<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			</hgroup>
 
-			<?php $header_image = get_header_image();
+			<?php /* $header_image = get_header_image();
 			if ( ! empty( $header_image ) ) { ?>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="clear header-image-link">
 					<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
 				</a>
-			<?php } // if ( ! empty( $header_image ) ) ?>
+			<?php } // if ( ! empty( $header_image ) ) */ ?>
 
 			<nav role="navigation" class="site-navigation main-navigation">
 				<h1 class="assistive-text"><?php _e( 'Menu', 'sundance' ); ?></h1>
