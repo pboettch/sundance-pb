@@ -507,7 +507,6 @@ a:active {
 	margin: 2.3571428571em 0 2em;
 }
 
-
 /* =Menu
 ----------------------------------------------- */
 
@@ -577,9 +576,11 @@ a:active {
 
 /* Small menu */
 .menu-toggle {
+	background: rgba(237, 234, 241, 0.9);
 	cursor: pointer;
 }
 .main-small-navigation .menu {
+	background: rgba(237, 234, 241, 0.9);
 	display: none;
 }
 
