@@ -1492,10 +1492,12 @@ video {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	#page {
-		padding: 1.5714285714em 0.5714285714em 0;
+		padding-top: 0.5714285714em;
+		padding-left: 0.5714285714em;
+		padding-right: 0.5714285714em;
 	}
 	#masthead {
-		margin: 0 0 1.5714285714em 0;
+		margin: 0 0 0 0;
 	}
 	#masthead hgroup {
 		margin: 0 0 1.1428571428em 0;

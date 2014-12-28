@@ -30,7 +30,6 @@
 <style type="text/css">
 #masthead {
     background-image: url('<?php header_image(); ?>');
-	width: <?php echo HEADER_IMAGE_WIDTH; ?>px;
 	height: <?php echo HEADER_IMAGE_HEIGHT; ?>px;
 	position: relative;
 }
