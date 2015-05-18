@@ -538,7 +538,6 @@ a:active {
 .main-navigation li.current-menu-item > a,
 .main-navigation li.current_page_ancestor > a,
 .main-navigation li.current-menu-ancestor > a {
-	color: #2c2c33;
 }
 .main-navigation ul ul {
 	background: #2c2c33;
@@ -553,7 +552,6 @@ a:active {
 	z-index: 99999;
 }
 .main-navigation ul ul a {
-	color: #fff;
 	padding: 10px;
 	width: 166px;
 }
@@ -563,8 +561,6 @@ a:active {
 .main-navigation ul ul li.current-menu-item > a,
 .main-navigation ul ul li.current_page_ancestor > a,
 .main-navigation ul ul li.current-menu-ancestor > a {
-	background-color: #37373f;
-	color: #fff;
 }
 .main-navigation ul li:hover > ul {
 	display: block;
